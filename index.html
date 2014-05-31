@@ -1,1 +1,129 @@
-Hello world, I am calvellido!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Juan MV Calvellido">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <title> Juan MV Calvellido </title>
+
+    <link href="css/bootstrap.css" rel="stylesheet"><!-- Bootstrap core CSS -->
+    <!--link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"-->
+    <link href="css/style.css" rel="stylesheet"><!-- Custom styles for this template -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--aside id="en-construccion">
+      <img src="img/en-construccion.png" alt="EN CONSTRUCCIÓN" width="256" height="32">
+    </aside-->
+    <!-- CABECERA -->
+    <!--Barra de navegación-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#start"> calvellido.es </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#start"><span class="glyphicon glyphicon-user"></span> start </a></li>
+            <li><a href="#info"><span class="glyphicon glyphicon-th-list"></span> info </a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> contact </a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- CONTENIDO -->
+    <!--Contenido-->
+    <div class="container">
+    <section id="start" class="seccion">
+    <div class="Absolute-Center">
+      <div class="text-center"><img src="img/profile.png" style="max-width:25%"></img></div>
+      <h1><span class="glyphicon glyphicon-user"></span> Hello!</h1>
+        <div class="well well-lg caja">
+          <!--p style="font-weight: 700; color: #1c93c6">This is just a testpage, please check back soon</p-->
+          <p><span style="font-weight: 700; color: #1c93c6">My name is <strong>Juan Valencia Calvellido</strong></a></span> and right now I'm completing a Bachelor of Information Technology at <a href="http://www.uca.es" target="_blank" class="roll"><span data-title="Universidad de Cádiz">Universidad de Cádiz</span></a>.
+          </p>
+        </div>
+      </div>
+    <div>
+    </section>
+    <section id="info" class="seccion">
+	    <h1><span class="glyphicon glyphicon-th-list"></span> info</h1>
+      <div class="well well-lg caja">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    </div>
+        <p style="font-weight: 700; color: #1c93c6">Section in progress, please check back soon or refer to the <a href="#contact" class="roll"><span data-title="contact section">contact section</span></a></p>
+        <div class="progress progress-striped active">
+          <div class="progress-bar" style="width: 25%"></div>
+        <div>
+    </section>
+    <section id="contact" class="seccion">
+    <div class="Absolute-Center">
+	    <h1><span class="glyphicon glyphicon-envelope"></span> contact</h1>
+	    <p class="well well-lg text-info caja">
+        If you need more info you can contact me at <a href="mailto:juanvalencia@calvellido.es" target="_blank" class="roll"><span data-title="juanvalencia@calvellido.es">juanvalencia@calvellido.es</span></a>
+      </p>
+    </div>
+    </section>
+
+    </div>
+
+    <!-- PIE -->
+
+    <!-- Librerías de JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script-->
+    <script src="js/bootstrap.js"></script>
+    <!--script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script-->
+
+    <script> /* Para hacer que (des)aparezca la sombra de la barra de navegación según la posición de y */
+      $(window).scroll(function(e){
+        if($('.navbar').offset().top > 25){
+          if(!$('.navbar').hasClass('shadow'))
+            $('.navbar').addClass('shadow');
+        }
+        else
+          $('.navbar').removeClass('shadow');
+      });
+      /*$(window).scroll(function(e){
+        if($('.navbar').offset().top > 0){
+          if(!$('.navbar').hasClass('shadow'))
+            $('.navbar').toggleClass('shadow');
+        }
+        else
+          $('.navbar').toggleClass('shadow');
+      });*/
+
+      /* Para cerrar la lista cuando se clica un elemento de la barra de navegación colapsada */
+      $('.navbar a').on('click', function(){
+        if ($('.navbar-toggle').is(':visible') && $('.navbar-nav').is(':visible'))
+          $('.navbar-toggle').click();
+      });
+
+      /* Scrolling suave */
+      $(document).on('click','a[href^="#"]', function(e){
+        e.preventDefault();
+        var $link = $(this);
+        var anchor = $link.attr('href');
+        $('html, body').stop().animate({
+          scrollTop: $(anchor).offset().top
+        }, 600);
+      });
+    </script>
+  </body>
+</html>
